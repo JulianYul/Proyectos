@@ -1,0 +1,6 @@
+Realización de un Blog de Videojuegos en el que pongo en práctica la utilización y conexión de una base de datos a una web realizada en la parte back con Php 8.2 y la parte front con HTML y CSS.
+
+En el Blog se integran las funciones de registro de usuarios, login de los mismos, creación de nuevas entradas en el blog, creación de categorías para dichas entradas, modificación de los datos personales y modificación de las entradas.
+Principalmente, en este proyecto, presto especial atención a la parte back, a la conexión y manejo de la DB y dejo en segundo plano la parte front, es por ello que podrían apreciarse algunos detalles menos "agradables" a la vista.
+
+Actualmente está en proceso de desarrollo.
