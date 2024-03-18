@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedacDent - Citas</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Logo empresa MedacDent -->
+    <header>
+        <div class="mt-4 container-fluid d-flex">
+            <img src="img/logo.jpeg" alt="MedacDent" class="logo rounded-circle mx-auto d-block shadow p-1 mb-5 bg-body">
+        </div>
+    </header>
+
+    <!-- Formulario para inscripcion de citas -->
+    <div class="container">
+        
+        <form id="cita-form" class="row col-12 g-2 justify-content-center text-center border border-2 rounded-5 formulario seccion-oscura mt-3 shadow p-3">
+            <h2>Añadir cita</h2>
+            <div class="col-4">
+                <input type="date" class="form-control rounded-pill" id="fecha" placeholder="Fecha cita" required>
+            </div>
+            <div class="col-4">
+                <input type="time" class="form-control rounded-pill" id="hora" required>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control rounded-pill" id="nombre" placeholder="Nombre paciente" required>
+            </div>
+            <div class="col-4">
+                <input type="email" class="form-control rounded-pill" id="email" placeholder="Email paciente" required>
+            </div>
+            <div class="col-4">
+                <input type="text" class="form-control rounded-pill" id="dni" placeholder="DNI" required>
+            </div>
+            <div class="col-4">
+                <input type="tel" class="form-control rounded-pill" id="telefono" placeholder="Teléfono" required>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-info border-dark fw-bold" type="submit">Añadir</button>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-info border-dark fw-bold" type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+
+        <!-- Citas inscritas, modificacion y/o eliminacion -->
+        <div class="container mt-2">
+            <div class="row rounded-4 border border-2 d-flex seccion-clara shadow p-3">
+                <div>
+                    <table class="col-12 text-center border-top" id="citas-table">
+                        <thead>
+                            <tr class="mx-auto text-center">
+                                <th class="col-1">#</th>
+                                <th class="col-1">Fecha</th>
+                                <th class="col-1">Hora</th>
+                                <th class="col-2">Nombre del Paciente</th>
+                                <th class="col-2">Email</th>
+                                <th class="col-1">DNI</th>
+                                <th class="col-2">Teléfono</th>
+                                <th class="col-1">Modificar</th>
+                                <th class="col-1">Eliminar</th>
+                            </tr>
+                        </thead>
+                        <!-- Las filas de citas se crearán y agregarán dinámicamente aquí -->               
+                        <tbody id="citas-list">
+
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Pie de pagina (footer) -->
+        <footer class="d-flex bg-dark py-2 text-center ">
+            <div class="container">
+                <span class="text-bg-dark">Julian Gallego &#169 2023</span>
+            </div>          
+        </footer>
+        
+    
+
+
+    <script href="js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
